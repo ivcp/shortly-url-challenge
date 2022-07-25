@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: hsl(var(--color-primary-cyan));
+  color: hsl(0 0% 100%);
+  padding: 1.5rem 5rem;
+  border-radius: 4rem;
+}
+
+.noBg {
+  background: transparent;
+}

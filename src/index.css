@@ -29,4 +29,32 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* SCREEN READER */
+/* .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+} */
