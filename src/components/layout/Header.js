@@ -3,9 +3,12 @@ import Button from '../../UI/Button';
 import MobileMenu from '../../UI/MobileMenu';
 import Grid from './Grid';
 import styles from './Header.module.css';
+import useMediaQuery from '../../hooks/useMediaQuers';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const isDesktop = useMediaQuery('(min-width: 37.5em)');
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
@@ -21,6 +24,7 @@ const Header = () => {
               className={`${styles.hamburger} ${menuOpen ? styles.closed : ''}`}
             ></span>
           </button>
+          {isDesktop && <MobileMenu />}
         </nav>
         <div className={styles.image}>
           <img
@@ -37,7 +41,7 @@ const Header = () => {
           <Button>Get started</Button>
         </div>
       </Grid>
-      {menuOpen && <MobileMenu />}
+      {menuOpen && !isDesktop && <MobileMenu />}
     </header>
   );
 };

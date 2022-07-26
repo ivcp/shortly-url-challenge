@@ -2,9 +2,9 @@ import Header from './components/layout/Header';
 
 function App() {
   return (
-    <main>
+    <>
       <Header />
-    </main>
+    </>
   );
 }
 

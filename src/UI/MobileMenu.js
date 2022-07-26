@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Button from './Button';
+import useMediaQuery from '../hooks/useMediaQuers';
 import styles from './MobileMenu.module.css';
 
 const Menu = () => {
+  const isDesktop = useMediaQuery('(min-width: 37.5em)');
   return (
     <div className={styles.menu}>
       <ul>
@@ -25,7 +27,9 @@ const Menu = () => {
       </ul>
       <hr />
       <div className={styles.buttons}>
-        <Button noBg={true}>Login</Button>
+        <Button noBg={true} desktop={isDesktop}>
+          Login
+        </Button>
         <Button>Sign up</Button>
       </div>
     </div>
@@ -33,7 +37,13 @@ const Menu = () => {
 };
 
 const MobileMenu = () => {
-  return ReactDOM.createPortal(<Menu />, document.getElementById('menu-root'));
+  const isDesktop = useMediaQuery('(min-width: 37.5em)');
+  const content = isDesktop ? (
+    <Menu />
+  ) : (
+    ReactDOM.createPortal(<Menu />, document.getElementById('menu-root'))
+  );
+  return content;
 };
 
 export default MobileMenu;

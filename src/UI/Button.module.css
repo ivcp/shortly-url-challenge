@@ -9,6 +9,17 @@
   border-radius: 4rem;
 }
 
+@media (min-width: 37.5em) {
+  .button {
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem;
+  }
+}
+
 .noBg {
   background: transparent;
+}
+
+.desktop {
+  color: hsl(var(--color-grayish-violet));
 }

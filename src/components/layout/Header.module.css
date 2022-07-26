@@ -9,12 +9,32 @@
   margin-bottom: 8rem;
 }
 
+@media (min-width: 37.5em) {
+  .nav {
+    grid-column: 2 / 8;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .nav > button {
   border: none;
   width: 3rem;
   height: 3rem;
   background: transparent;
   cursor: pointer;
+}
+
+@media (min-width: 37.5em) {
+  .nav > button {
+    display: none;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .nav > img {
+    height: 3.3rem;
+  }
 }
 
 .hamburger {
