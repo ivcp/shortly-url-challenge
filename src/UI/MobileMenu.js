@@ -27,7 +27,7 @@ const Menu = () => {
       </ul>
       <hr />
       <div className={styles.buttons}>
-        <Button noBg={true} desktop={isDesktop}>
+        <Button noBg desktop={isDesktop}>
           Login
         </Button>
         <Button desktop={isDesktop}>Sign up</Button>

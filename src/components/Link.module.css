@@ -1,0 +1,23 @@
+.link {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link > a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: hsl(var(--color-very-dark-violet));
+}
+
+.link > a:last-of-type {
+  color: hsl(var(--color-primary-cyan));
+}
+
+.link > hr {
+  opacity: 0.5;
+}

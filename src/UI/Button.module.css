@@ -14,6 +14,11 @@
     cursor: pointer;
     padding: 1.2rem 4rem;
     font-size: 2rem;
+    transition: background 0.2s;
+  }
+
+  .button:hover {
+    background-color: hsl(var(--color-primary-cyan) / 0.6);
   }
 }
 
@@ -25,9 +30,28 @@
   .noBg {
     color: hsl(var(--color-grayish-violet));
   }
+
+  .noBg:hover {
+    background: transparent;
+  }
 }
 
 .desktop {
   font-size: 1.6rem;
   padding: 0.6rem 2rem;
+}
+
+.shorten {
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.2rem 5rem;
+}
+
+.link {
+  font-size: 2.2rem;
+  padding: 0.8rem;
+}
+
+.link:focus {
+  background-color: hsl(var(--color-primary-dark-violet));
 }
