@@ -30,7 +30,7 @@ const Menu = () => {
         <Button noBg={true} desktop={isDesktop}>
           Login
         </Button>
-        <Button>Sign up</Button>
+        <Button desktop={isDesktop}>Sign up</Button>
       </div>
     </div>
   );

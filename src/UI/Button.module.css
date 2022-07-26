@@ -11,8 +11,9 @@
 
 @media (min-width: 37.5em) {
   .button {
-    font-size: 1.6rem;
-    padding: 0.6rem 2rem;
+    cursor: pointer;
+    padding: 1.2rem 4rem;
+    font-size: 2rem;
   }
 }
 
@@ -20,6 +21,13 @@
   background: transparent;
 }
 
+@media (min-width: 37.5em) {
+  .noBg {
+    color: hsl(var(--color-grayish-violet));
+  }
+}
+
 .desktop {
-  color: hsl(var(--color-grayish-violet));
+  font-size: 1.6rem;
+  padding: 0.6rem 2rem;
 }
