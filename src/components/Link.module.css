@@ -11,7 +11,8 @@
   .link {
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.8rem;
+    align-items: center;
+    padding: 1.8rem 3rem;
   }
 }
 

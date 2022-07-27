@@ -63,8 +63,12 @@
 @media (min-width: 37.5em) {
   .link {
     font-size: 1.6rem;
-
     color: hsl(var(--color-grayish-violet));
+    cursor: pointer;
+  }
+
+  .link:hover {
+    color: hsl(var(--color-primary-dark-violet));
   }
 }
 

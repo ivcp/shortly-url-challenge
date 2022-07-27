@@ -65,9 +65,10 @@
     font-size: 1.8rem;
     width: max-content;
     padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
   }
 }
 
-.link:focus {
+.copied {
   background-color: hsl(var(--color-primary-dark-violet));
 }

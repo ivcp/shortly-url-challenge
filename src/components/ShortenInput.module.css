@@ -44,17 +44,36 @@
 .input {
   width: 100%;
   font: inherit;
+  color: hsl(var(--color-primary-dark-violet));
   font-size: 2rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: none;
 }
 
-/* @media (min-width: 37.5em) {
+@media (min-width: 37.5em) {
   .input {
+    flex-shrink: 1;
   }
-} */
+}
 
-/* .input:focus {
-  border: 0.2rem solid hsl(var(--color-secondary));
-} */
+.inputError {
+  border: 0.4rem solid hsl(var(--color-secondary));
+}
+
+.inputError::placeholder {
+  color: hsl(var(--color-secondary) / 0.6);
+}
+
+.error {
+  color: hsl(var(--color-secondary));
+  margin-top: -2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 37.5em) {
+  .error {
+    position: absolute;
+    top: 90%;
+  }
+}
