@@ -1,0 +1,21 @@
+.boost {
+  background: url('../../../public/images/bg-boost-mobile.svg') center no-repeat;
+  background-color: hsl(var(--color-primary-dark-violet));
+  padding-block: 12rem;
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .boost {
+    padding-block: 6rem;
+    background: url('../../../public/images/bg-boost-desktop.svg') center
+      no-repeat;
+    background-color: hsl(var(--color-primary-dark-violet));
+  }
+}
+
+.boost > h1 {
+  font-size: 4rem;
+  color: hsl(0 0% 100%);
+  margin-bottom: 2rem;
+}
