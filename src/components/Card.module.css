@@ -1,0 +1,50 @@
+.card {
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  padding-inline: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 37.5em) {
+  .card {
+    text-align: left;
+    padding-inline: 3.5rem;
+  }
+
+  .second {
+    transform: translateY(5rem);
+  }
+  .third {
+    transform: translateY(10rem);
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  color: hsl(var(--color-very-dark-blue));
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+@media (min-width: 37.5em) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+.icon {
+  margin-inline: auto;
+  width: max-content;
+  background-color: hsl(var(--color-primary-dark-violet));
+  padding: 3rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 37.5em) {
+  .icon {
+    margin: 0;
+    padding: 2.3rem;
+  }
+}
