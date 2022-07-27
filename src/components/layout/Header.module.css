@@ -1,6 +1,6 @@
 .header {
   padding-top: 4rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .nav {
@@ -103,7 +103,7 @@
     grid-column: 2 / 5;
     text-align: left;
     margin-top: 0;
-    padding-block: 4rem;
+    padding-bottom: 4rem;
   }
 }
 

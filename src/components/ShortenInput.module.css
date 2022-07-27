@@ -10,6 +10,12 @@
   gap: 2rem;
 }
 
+@media (min-width: 37.5em) {
+  .container {
+    grid-column: 2 / -2;
+  }
+}
+
 .form {
   padding-block: 3rem;
   padding-inline: 2rem;
@@ -22,6 +28,19 @@
   gap: 3rem;
 }
 
+@media (min-width: 37.5em) {
+  .form {
+    flex-direction: row;
+    padding: 5rem;
+    transform: translateY(-50%);
+    margin-bottom: -8rem;
+    background: url('../../public/images/bg-shorten-desktop.svg') center
+      no-repeat;
+    background-color: hsl(var(--color-primary-dark-violet));
+    background-size: 105%;
+  }
+}
+
 .input {
   width: 100%;
   font: inherit;
@@ -30,6 +49,11 @@
   border-radius: 0.5rem;
   border: none;
 }
+
+/* @media (min-width: 37.5em) {
+  .input {
+  }
+} */
 
 /* .input:focus {
   border: 0.2rem solid hsl(var(--color-secondary));
