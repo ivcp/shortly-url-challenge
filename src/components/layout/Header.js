@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../UI/Button';
+import Button from '../UI/Button';
 import MobileMenu from '../MobileMenu';
 import Grid from './Grid';
 import styles from './Header.module.css';

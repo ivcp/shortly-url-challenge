@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../UI/Button';
+import Button from './UI/Button';
 import styles from './Link.module.css';
 
 const Link = ({ shortLink, originalLink }) => {

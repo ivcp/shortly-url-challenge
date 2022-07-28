@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Button from '../UI/Button';
+import Button from './UI/Button';
 import { useRef } from 'react';
 import Grid from './layout/Grid';
 import Link from './Link';
