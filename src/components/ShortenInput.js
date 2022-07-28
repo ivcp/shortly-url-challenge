@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../UI/Button';
 import { useRef } from 'react';
 import Grid from './layout/Grid';
@@ -10,6 +10,14 @@ const ShortenInput = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [shortenedLinks, setShortenedLinks] = useState([]);
   const enteredLink = useRef(null);
+
+  useEffect(() => {
+    const storedLinks = JSON.parse(localStorage.getItem('links'));
+    if (!storedLinks) return;
+    if (storedLinks.length > 0) {
+      setShortenedLinks(storedLinks);
+    }
+  }, []);
 
   const submitHandler = async e => {
     e.preventDefault();
@@ -35,7 +43,9 @@ const ShortenInput = () => {
         short: response.result.full_short_link2,
         original: response.result.original_link,
       };
-      setShortenedLinks([...shortenedLinks, shortenedLink]);
+      const newList = [shortenedLink, ...shortenedLinks];
+      setShortenedLinks(newList);
+      localStorage.setItem('links', JSON.stringify(newList));
     } catch (err) {
       setError(true);
     }
