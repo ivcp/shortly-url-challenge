@@ -1,0 +1,116 @@
+.footer {
+  background-color: hsl(var(--color-very-dark-violet));
+  color: hsl(0 0% 100%);
+}
+
+.sectionTitle {
+  grid-column: 2 / 3;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+@media (min-width: 37.5em) {
+  .sectionTitle {
+    font-size: 3rem;
+    grid-column: 2 / 4;
+    text-align: left;
+    padding: 6rem 0;
+  }
+}
+
+.links {
+  grid-column: 2 / 3;
+  justify-self: center;
+  padding: 4rem;
+}
+
+@media (min-width: 37.5em) {
+  .links {
+    padding: 6rem 2rem;
+  }
+  .features {
+    grid-column: 4 / 5;
+  }
+  .resources {
+    grid-column: 5 / 6;
+  }
+  .company {
+    grid-column: 6 / 7;
+  }
+}
+
+.links > h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 37.5em) {
+  .links > h2 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+}
+
+.links > ul {
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .links > ul {
+    text-align: left;
+  }
+}
+
+.links li {
+  padding-block: 1rem;
+}
+
+@media (min-width: 37.5em) {
+  .links li {
+    padding-block: 0.5rem;
+  }
+}
+
+.links a {
+  text-decoration: none;
+  color: hsl(var(--color-gray));
+  font-size: 1.8rem;
+  transition: color 0.2s;
+}
+
+@media (min-width: 37.5em) {
+  .links a {
+    font-size: 1.5rem;
+  }
+
+  .links a:hover {
+    color: hsl(var(--color-primary-cyan));
+  }
+}
+
+.social {
+  grid-column: 2 / 3;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.social svg {
+  fill: hsl(0 0% 100%);
+}
+
+@media (min-width: 37.5em) {
+  .social {
+    grid-column: 7 / 8;
+    padding-bottom: 0;
+    align-self: start;
+    padding-top: 6rem;
+  }
+
+  .social svg:hover {
+    fill: hsl(var(--color-primary-cyan));
+  }
+}

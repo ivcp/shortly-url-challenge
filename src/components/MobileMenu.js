@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './Button';
+import Button from '../UI/Button';
 import useMediaQuery from '../hooks/useMediaQuers';
 import styles from './MobileMenu.module.css';
 

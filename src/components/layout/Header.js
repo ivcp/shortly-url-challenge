@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../../UI/Button';
-import MobileMenu from '../../UI/MobileMenu';
+import MobileMenu from '../MobileMenu';
 import Grid from './Grid';
 import styles from './Header.module.css';
 import useMediaQuery from '../../hooks/useMediaQuers';

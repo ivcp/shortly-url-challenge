@@ -18,7 +18,7 @@
   }
 
   .button:hover {
-    background-color: hsl(var(--color-primary-cyan) / 0.6);
+    background-color: hsl(var(--color-btn-hover));
   }
 }
 
@@ -70,5 +70,8 @@
 }
 
 .copied {
+  background-color: hsl(var(--color-primary-dark-violet));
+}
+.copied:hover {
   background-color: hsl(var(--color-primary-dark-violet));
 }
